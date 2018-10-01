@@ -1,0 +1,54 @@
+<div id="bgContainer">
+	<div class="container pato45">
+		<div class="row" *ngIf="user">
+			<div class="col-md-3">
+				<div [ngClass]="{'avatarFrameOnline':user.status=='Online','avatarFramebusy':user.status=='Busy','avatarFrameoffline':user.status=='AppearOffline','avatarFrameaway':user.status=='Away'}">
+					<img
+					class="avatarImage img-fluid" id="homeAvatarPicture" [src]="croppedImage || user.avatar || 'assets/img/generic_avatar.png'">
+				</div>
+				<hr>
+				<div>
+					<span>Cambiar foto</span><br>
+					<label class="custom-file-upload btn btn-platzi">
+						<input type="file" (change)="fileChangeEvent($event)">Subir Foto
+					</label>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<image-cropper
+				    [imageChangedEvent]="imageChangedEvent"
+				    [maintainAspectRatio]="true"
+				    [aspectRatio]="1 / 1"
+				    [resizeToWidth]="128"
+				    format="png"
+				    (imageCroppedBase64)="imageCropped($event)"
+				    (imageLoaded)="imageLoaded()"
+				    (loadImageFailed)="loadImageFailed()"
+				></image-cropper>
+				<div>
+					<label fixed>Nombre</label>
+					<input type="text" class="form-control" [(ngModel)]="user.name">
+				</div>
+				<div>
+					<label fixed>Subnick</label>
+					<input type="text" [(ngModel)]="user.nick" class="form-control">
+				</div>
+				<div>
+					<label fixed>Email</label>
+					<input type="email" disabled [(ngModel)]="user.email" class="form-control">
+				</div>
+				<div>
+					<label fixed>Status</label>
+					<select class="form-control" [(ngModel)]="user.status">
+						<option value="Online">Conectado</option>
+						<option value="Away">Ausente</option>
+						<option value="Busy">Ocupado</option>
+						<option value="AppearOffline">Desconectado</option>
+					</select>
+				</div>
+				<hr>
+				<button (click)="edit()" class="btn btn-platzi btn-block" type="button">Guardar cambios</button>
+			</div>
+		</div>
+	</div>
+</div>

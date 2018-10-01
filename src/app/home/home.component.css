@@ -1,0 +1,18 @@
+.whiteBorderGlassBox{
+	border:2px solid rgba(255,255,255,.75);
+	padding: 8px;
+}
+.homeHeadContainer{
+	background: rgba(255,255,255,.5);
+}
+#homeAvatarPicture{
+	max-width: 100px;
+}
+.whiteContainerPadded{
+	padding: 15px;
+	background:#feffff;
+}
+.list-friend{
+	color: #000;
+	text-decoration: none;
+}

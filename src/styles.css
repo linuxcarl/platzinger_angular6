@@ -1,1 +1,125 @@
 /* You can add global styles to this file, and also import other style files */
+#main-logo{
+	width: 40px;
+}
+.avatarFrameOffline{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e0e0e0+0,b7b7b7+52,d1d1d1+100 */
+	background: rgb(224,224,224); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(183,183,183,1) 52%, rgba(209,209,209,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(224,224,224,1) 0%,rgba(183,183,183,1) 52%,rgba(209,209,209,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(224,224,224,1) 0%,rgba(183,183,183,1) 52%,rgba(209,209,209,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#d1d1d1',GradientType=0 ); /* IE6-9 */
+	padding: 6px;
+	border-radius:5px;
+	border: 1px solid rgba(255,255,255,.36);
+	box-shadow: 3px 3px 21px 1px rgba(0,0,0,.75);
+	-webkit-box-shadow:3px 3px 21px 1px rgba(0,0,0,.75);
+	-moz-box-shadow:3px 3px 21px 1px rgba(0,0,0,.75);
+}
+
+.backgroundAmsnImg {
+  background-image: url(assets/img/msnbg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position-y: 35px;
+}
+.avatarFrameOnline {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2ff6b+0,81ff3d+50,0cff00+51,0dbc03+100 */
+  background: #d2ff6b; /* Old browsers */
+  background: -moz-linear-gradient(top, #d2ff6b 0%, #81ff3d 50%, #0cff00 51%, #0dbc03 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #d2ff6b 0%,#81ff3d 50%,#0cff00 51%,#0dbc03 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #d2ff6b 0%,#81ff3d 50%,#0cff00 51%,#0dbc03 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff6b', endColorstr='#0dbc03',GradientType=0 ); /* IE6-9 */
+  text-align: center;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  -webkit-box-shadow: 3px 3px 21px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 21px 1px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 21px 1px rgba(0,0,0,0.75);
+}
+.avatarFrameoffline {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,eae5e5+45,c1bdbd+47,bab6b6+100 */
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #eae5e5 45%, #c1bdbd 47%, #bab6b6 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 0%,#eae5e5 45%,#c1bdbd 47%,#bab6b6 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%,#eae5e5 45%,#c1bdbd 47%,#bab6b6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bab6b6',GradientType=0 ); /* IE6-9 */
+  text-align: center;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  -webkit-box-shadow: 3px 3px 21px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 21px 1px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 21px 1px rgba(0,0,0,0.75);
+}
+.avatarFrameaway {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb76b+0,ffa73d+50,ff7c00+51,ff7f04+100;Orange+Gloss */
+  background: #ffb76b; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffb76b 0%, #ffa73d 50%, #ff7c00 51%, #ff7f04 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=0 ); /* IE6-9 */
+  text-align: center;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  -webkit-box-shadow: 3px 3px 21px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 21px 1px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 21px 1px rgba(0,0,0,0.75);
+}
+.avatarFramebusy {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff926b+0,ff5a3d+50,ff0000+51,c10303+100 */
+  background: #ff926b; /* Old browsers */
+  background: -moz-linear-gradient(top, #ff926b 0%, #ff5a3d 50%, #ff0000 51%, #c10303 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ff926b 0%,#ff5a3d 50%,#ff0000 51%,#c10303 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ff926b 0%,#ff5a3d 50%,#ff0000 51%,#c10303 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff926b', endColorstr='#c10303',GradientType=0 ); /* IE6-9 */
+  text-align: center;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  -webkit-box-shadow: 3px 3px 21px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 21px 1px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 21px 1px rgba(0,0,0,0.75);
+}
+#bgContainer{
+	background-image: url('/assets/img/msnbg.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.btn-platzi{
+	color: #363738;
+    background: linear-gradient(360deg,#f9f9f9,#ececec,#edf8fc);
+    border-color: #dcdcdc;
+}
+.marbo15{
+	margin-bottom: 15px;
+}
+.marbo5{
+	margin-bottom: 5px;
+}
+.marto15{
+	margin-top: 15px;
+}
+.pato45{
+	padding-top: 45px;
+}
+.generalContant{
+	margin-top: 56px;
+}
+img.icon{
+	width: 25px;
+}
+.disblo{
+	display: block;
+}
+input[type=file]{
+	display: none;
+}
+.custom-file-upload{
+	display: inline-block;
+	padding: 6px 2px;
+	cursor: pointer;
+}

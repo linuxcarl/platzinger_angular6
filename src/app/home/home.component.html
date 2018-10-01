@@ -1,0 +1,40 @@
+<div id="homeContainer bgContainer">
+	<div class="whiteBorderGlassBox">
+		<div class="homeHeadContainer">
+			<div class="row" *ngIf="user">
+				<div class="col-md-auto">
+					<div [ngClass]="{'avatarFrameOnline':user.status=='Online','avatarFramebusy':user.status=='Busy','avatarFrameoffline':user.status=='AppearOffline','avatarFrameaway':user.status=='Away'}">
+						<img *ngIf="user" src="{{user.avatar || 'assets/img/generic_avatar.png'}}" class="avatarImage img-fluid" id="homeAvatarPicture">
+					</div>
+				</div>
+				<div class="col">
+					<b>{{user.name}}</b>
+					<div>
+						<span>{{user.status}}</span><br>
+						<span><i>{{user.nick}}</i></span><br>
+						<a (click)="logout()">Salir</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="whiteContainerPadded marto15">
+		<div class="row">
+			<div class="col">
+				<input type="text" placeholder="Search friend" [(ngModel)]="query" class="form-control">
+			</div>
+			<div class="col-md-auto">
+				<img src="/assets/img/logo_live_add.png" class="icon">
+			</div>
+		</div>
+		<hr>
+		<h3 *ngIf="usuarios">Amigos ({{usuarios.length}} / {{usuarios.length}})</h3>
+		<div *ngFor="let user of usuarios | search: query" class="disblo marbo5">
+			<img src="assets/img/logo_live_online.png" class="icon">
+			<a routerLink="/conversation/{{user.uid}}" class="list-friend">
+				<strong>{{user.name}} </strong>
+				<small><i>{{user.email}}</i></small>
+			</a>
+		</div>
+	</div>
+</div>
